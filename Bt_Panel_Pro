@@ -12,7 +12,7 @@ IO="" # store IP
 mpw=`date +%D%s%N | md5sum | head -c 10`
 day=`date +%Y`
 dayT=`date +%T`
-DOWNLOAD_URL="http://download.umaru.uk"
+DOWNLOAD_URL="https://raw.githubusercontent.com/luguo124/Bt_Panel_Pro-V6.9.4/master"
 case $OS in
 Linux) IP=`curl -s http://ipinfo.io/|grep 'ip'|sed -n '1p'|cut -d '"' -f4`;;
 FreeBSD|OpenBSD) IP=`curl -s http://ipinfo.io/|grep 'ip'|sed -n '1p'|cut -d '"' -f4` ;;
