@@ -59,11 +59,11 @@ clear
 read -p "Centos 面板 请选择c ，Ubuntu 面板 请选择u ，Debian 面板 请选择d ，已安装面板 请选择y:" np
 
 if [[ "${np}" == "c" ]]; then
-	wget -O install.sh http://download.umaru.uk/install/install_6.0.sh && sh install.sh
+	wget -O install.sh https://raw.githubusercontent.com/luguo124/Bt_Panel_Pro-V6.9.4/master/install/install_6.0.sh && sh install.sh
 elif [[ "${np}" == "u" ]]; then
-	wget -O install.sh http://download.umaru.uk/install/install-ubuntu_6.0.sh && sudo bash install.sh
+	wget -O install.sh https://raw.githubusercontent.com/luguo124/Bt_Panel_Pro-V6.9.4/master/install/install-ubuntu_6.0.sh && sudo bash install.sh
 elif [[ "${np}" == "d" ]]; then
-	wget -O install.sh http://download.umaru.uk/install/install-ubuntu_6.0.sh && bash install.sh
+	wget -O install.sh https://raw.githubusercontent.com/luguo124/Bt_Panel_Pro-V6.9.4/master/install/install-ubuntu_6.0.sh && bash install.sh
 elif [[ "${np}" == "y" ]]; then
 	curl http://download.umaru.uk/install/update6.sh|bash
 else
